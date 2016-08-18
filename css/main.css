@@ -13,18 +13,18 @@ body, html{
     height:100%;
 }
 
-container {
+.container {
     width:100%;
     display: flex;
     flex-wrap:wrap;
     margin:0px;
 }
 
-header, nav, footer, section, container, div, h2, content{
+header, nav, footer, .item, .container, div, h2, content{
     box-sizing:border-box;
 }
 
-section {
+.item {
     border-bottom: 1px black solid;
     padding: 0px;
     margin: 0px;
@@ -118,7 +118,7 @@ h3 {
     margin-left: 1em;
 }
 
-container img{
+.container img{
     width:100%;
 }
 
@@ -233,13 +233,13 @@ p {
 }
 
 @media screen and (min-width: 550px){
-    section {
+    .iteam {
         width:33%;
     }
-    section img {
+    .item img {
 
     }
-    section p {
+    .item p {
         margin-top: 20px;
         margin-bottom:10px;
     }
@@ -265,11 +265,11 @@ p {
     #menu {
         display: none;
     }
-    section {
+    .item {
         margin-right:5%;
         width:28%;
     }
-    section:last-of-type{
+    .item:last-of-type{
         margin-right: 0;
     }
 }
