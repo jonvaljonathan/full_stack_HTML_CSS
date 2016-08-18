@@ -1,0 +1,278 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+body, html{
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    width:100%;
+    height:100%;
+}
+
+container {
+    width:100%;
+    display: flex;
+    flex-wrap:wrap;
+    margin:0px;
+}
+
+header, nav, footer, section, container, div, h2, content{
+    box-sizing:border-box;
+}
+
+section {
+    border-bottom: 1px black solid;
+    padding: 0px;
+    margin: 0px;
+    flex-grow:1;
+    width:100%;
+}
+
+/* Header */
+
+.header{
+    min-height:56px;
+    transition: min-height 0.3s;
+    border-bottom: 1px black solid;
+}
+
+.header__inner {
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+.header__logo{
+    height:72px;
+    margin-left: 1em;
+    vertical-align: top;
+    margin-top: 12px;
+    float:left;
+}
+
+.header__title {
+    font-weight:300;
+    font-size:4em;
+    margin: 0.5em 0.25em;
+    display: inline-block;
+    color: #212121;
+}
+
+
+/*
+ *
+ * Navigation
+ *
+ */
+
+.nav {
+    width:100%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.nav__list {
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+.nav__item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    line-height: 24px;
+    padding: 24px;
+    text-transform: uppercase;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #616161;
+  padding: 1.5em;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+
+
+h2{
+    font-family: 'Oswald', sans-serif;
+    width:100%;
+    font-size: 32px;
+    border-bottom: 1px solid #BBB2BF;
+    padding-left: 1em;
+
+}
+
+h3 {
+    font-family: 'Bitter', serif;
+    margin-left: 1em;
+}
+
+container img{
+    width:100%;
+}
+
+p {
+    font-family: 'Bitter', serif;
+    text-align: center;
+    width:100%;
+}
+
+.education{
+    order: 0;
+
+}
+
+.travel {
+    order: 1;
+
+}
+
+.fun {
+    order:2;
+
+}
+
+/*
+ *
+ * Footer
+ *
+ */
+
+ .footer {
+    text-align: center;
+ }
+
+.footer ul {
+    list-style-type: none;
+    width:100%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding:0;
+}
+
+
+
+.footer li {
+    display: inline-block;
+    margin-left:7%;
+    margin-right: 7%;
+}
+
+.footer a {
+    width: 100%;
+}
+
+/*
+ *
+ * Responsive
+ *
+ */
+
+ .header__menu {
+    display:none;
+}
+
+@media screen and (max-width: 549px){
+    .header__logo {
+        height: 48px;
+        margin-left: .5em;
+        margin-top: .5em;
+
+    }
+
+    .header__title {
+        margin-left: 0;
+        font-size: 2em;
+        vertical-align: bottom;
+        }
+
+    .nav {
+        z-index:10;
+        background-colors: #fff;
+        width:300px;
+        position: absolute;
+        -webkit-transform: translate (-300px, 0);
+        transform: translate(-300px,0);
+        transition:transform 0.3s ease;
+    }
+    .nav.open{
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+    .nav__item{
+        display:list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width:100%;
+        text-align:left;
+    }
+    .header__menu {
+        display:inline-block;
+        position: absolute;
+        right:0;
+        padding:1em;
+    }
+    .header__menu svg {
+        width: 32px;
+        fill: black;
+    }
+
+    .nav {
+        background-color: white;
+    }
+}
+
+@media screen and (min-width: 550px){
+    section {
+        width:33%;
+    }
+    section img {
+
+    }
+    section p {
+        margin-top: 20px;
+        margin-bottom:10px;
+    }
+    #udacity {
+        padding-top: 25%;
+        padding-bottom:25%;
+    }
+    #cu {
+        padding-top:15%;
+        padding-bottom:15%;
+    }
+
+}
+
+@media screen and (min-width: 900px){
+    body {
+        height:300;
+        max-width: 1200px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+
+    #menu {
+        display: none;
+    }
+    section {
+        margin-right:5%;
+        width:28%;
+    }
+    section:last-of-type{
+        margin-right: 0;
+    }
+}
+
+
+

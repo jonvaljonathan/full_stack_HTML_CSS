@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="description" content="Udacity Responsive Images course project" />
+  <meta name="author" content="//samdutton.com">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta itemprop="name" content="Udacity Responsive Images course project">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta id="theme-color" name="theme-color" content="#307699">
+
+
+  <title>Jonathan White's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Bitter|Oswald|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel"sylesheet" type="text/css" href="responsive.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <img class="header__logo" src='images/shark.svg' alt="Shark Logo">
+      <h1 class="header__title">Portfolio</h1>
+      <a id="menu" class="header__menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+  <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">Education</a></li>
+        <li class="nav__item"><a href="#">Travel</a></li>
+        <li class="nav__item"><a href="#">Fun</a></li>
+      </ul>
+  </nav>
+
+
+
+  <container class="education">
+    <h2>Education.</h2>
+    <section>
+      <h3>Udacity</h3>
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/udacity-1600_large_2x.jpg 2x, images/udacity-800_medium_1x.jpg" />
+        <source media="(min-width: 500px)" srcset="images/udacity-400_small_1x.jpg" />
+        <img src="images/udacity-800_medium_1x.jpg" alt="Udacity Logo" id="udacity">
+      </picture>
+      <p>Working on finishing the Full-Stack Developer Nano Degree!</p>
+    </section>
+    <section>
+      <h3>University of Colorado</h3>
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/buffs-1600_large_2x.jpg 2x, images/buffs-800_medium_1x.jpg" />
+        <source media="(min-width: 500px)" srcset="images/buffs-400_small_1x.jpg" />
+        <img src="images/buffs-800_medium_1x.jpg" alt="University of Colorado Logo" id="cu">
+      </picture>
+      <p>Go Buffs!</p>
+    </section>
+    <section>
+      <h3>School of Hard Knocks</h3>
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/hard_knocks-1600_large_2x.png 2x, images/hard_knocks-800_medium_1x.png" />
+        <source media="(min-width: 500px)" srcset="images/hard_knocks-400_small_1x.png" />
+        <img src="images/hard_knocks-800_medium_1x.png" alt="University of Hard Knocks Logo">
+      </picture>
+      <p>I took night classes. Truuuu</p>
+    </section>
+  </container>
+
+  <container class="travel">
+    <h2>Travel</h2>
+    <section>
+      <h3>Ireland</h3>
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/ireland-1600_large_2x.jpg 2x, images/ireland-800_medium_1x.jpg" />
+        <source media="(min-width: 500px)" srcset="images/ireland-400_small_1x.jpg" />
+        <img src="images/ireland-800_medium_1x.jpg" alt="Picture of sun setting through tree in Ireland">
+      </picture>
+      <p>It is so it is and it was so it was.</p>
+    </section>
+    <section>
+      <h3>Florida</h3>
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/Florida-1600_large_2x.jpg 2x, images/Florida-800_medium_1x.jpg" />
+        <source media="(min-width: 500px)" srcset="images/Florida-400_small_1x.jpg" />
+        <img src="images/Florida-800_medium_1x.jpg" alt="Picture of sunset in Florida Keys">
+      </picture>
+      <p>Stay tight in the Keys!</p>
+    </section>
+    <section>
+      <h3>Seattle</h3>
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/seattle-1600_large_2x.jpg 2x, images/seattle-800_medium_1x.jpg" />
+        <source media="(min-width: 500px)" srcset="images/seattle-400_small_1x.jpg" />
+        <img src="images/seattle-800_medium_1x.jpg" alt="Picture on top of Hurricane Ridge in Olympic National Park outside of Seattle">
+      </picture>
+      <p>Watch out for the mountain goats.</p>
+    </section>
+  </container>
+
+  <container class="fun">
+    <h2>Fun</h2>
+    <section>
+      <h3>Kiting</h3>
+     <picture>
+        <source media="(min-width: 750px)" srcset="images/kiting-1600_large_2x.jpg 2x, images/kiting-800_medium_1x.jpg" />
+        <source media="(min-width: 500px)" srcset="images/kiting-400_small_1x.jpg" />
+        <img src="images/kiting-800_medium_1x.jpg" alt="Picture of a bro hauling in his kite after a long day on the water.">
+      </picture>
+      <p>It's nuking bra!</p>
+    </section>
+    <section>
+      <h3>Sailing</h3>
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/sailing-1600_large_2x.jpg 2x, images/sailing-800_medium_1x.jpg" />
+        <source media="(min-width: 500px)" srcset="images/sailing-400_small_1x.jpg" />
+        <img src="sailing-800_medium_1x.jpg" alt="Picture of a bro at the tiller of a 14 foot single hull sailboat.">
+      </picture>
+      <p>Ready about, hard a-lee!</p>
+    </section>
+    <section>
+      <h3>Equestrian</h3>
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/equestrian-1600_large_2x.jpg 2x, images/equestrian-800_medium_1x.jpg" />
+        <source media="(min-width: 500px)" srcset="images/equestrian-400_small_1x.jpg" />
+        <img src="images/equestrian-800_medium_1x.jpg" alt="Picture of a noble steed grazing infront of a barn.">
+      </picture>
+      <p>Talleyho!</p>
+    </section>
+  </container>
+
+
+
+
+
+
+
+
+
+
+  <div class="flourish"></div
+
+  <br>
+  <container class='footer'>
+    <ul>
+      <li class="zocial-facebook"></li>
+      <li class="zocial-twitter"></li>
+      <li class="zocial-digg"></li>
+      <li class="zocial-googleplus"></li>
+    </ul>
+    <a href="#" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+  </container>
+
+  <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
+</body>
+</html>
